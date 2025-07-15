@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e272e;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Avoid horizontal scroll */
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0b0f1a 0%, #101726 100%);
+  color: white;
+  padding: 17px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 12px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover
+{
+    color: #05c793;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 25px; /* Proper gap instead of margin */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 8%;
+}
+
+.movie-session {
+  flex: 1 1 300px;
+  max-width: 350px;
+  color: white;
+  padding: 20px;
+  background-color: #0d0d0d;
+  border: 1px solid #16213e;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.movie-session img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-session h2 {
+  color: #05c793;
+  padding: 5px;
+}
+
+.movie-session p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .movie-session {
+    flex: 1 1 100%;
+  }
+}
+
