@@ -243,11 +243,25 @@
     <div class="background-layout"></div>
     <div class="popup">
 
-    <script>
+   <script>
   function toggleMenu() {
     document.getElementById("navbar-list").classList.toggle("show");
   }
+
+  // Close the menu when a link is clicked
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.navbar ul li a');
+    const navList = document.getElementById("navbar-list");
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove("show");
+      });
+    });
+  });
 </script>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

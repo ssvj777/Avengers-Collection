@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    padding-top:  115px;
     /* Avoid horizontal scroll */
 }
 
@@ -74,7 +75,7 @@ body {
 }
 
 .menu-toggle {
-    display: block;
+    display: none;
     font-size: 28px;
     cursor: pointer;
 }
@@ -102,8 +103,8 @@ body {
         display: block;
         color: white;
     }
-    .container {
-        margin-top: 28%;
+    body {
+        padding-top: 105px;
     }
 }
 
@@ -116,7 +117,6 @@ body {
     /* Proper gap instead of margin */
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 8%;
 }
 
 .movie-session {
