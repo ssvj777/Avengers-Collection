@@ -130,6 +130,7 @@ body {
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 .movie-session img {
@@ -140,18 +141,6 @@ body {
 .movie-session h2 {
     color: #05c793;
     padding: 5px;
-}
-
-.movie-session p {
-    font-size: 20px;
-    text-align: justify;
-    text-justify: inter-word;
-    word-spacing: 1px;
-    line-height: 1.8;
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 18px;
 }
 
 @media (max-width: 800px) {
