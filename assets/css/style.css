@@ -11,7 +11,7 @@ body {
   overflow-x: hidden; /* Avoid horizontal scroll */
 }
 
-.navbar {
+/* .navbar {
   background: linear-gradient(90deg, #0b0f1a 0%, #101726 100%);
   color: white;
   padding: 17px;
@@ -36,6 +36,71 @@ body {
 .navbar ul li a:hover
 {
     color: #05c793;
+} */
+
+
+.navbar {
+  background: linear-gradient(90deg, #0b0f1a 0%, #101726 100%);
+  color: white;
+  padding: 17px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 12px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+  color: #05c793;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #101726;
+    width: 100%;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
 }
 
 .container {

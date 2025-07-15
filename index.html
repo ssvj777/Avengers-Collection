@@ -12,7 +12,8 @@
 <body>
     <div class="navbar">
         <img src="./assets/img/avengers_logo.png" alt="Avengers" width="200px">
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="navbar-list">
             <li><a href="#">Marvel-Movies</a></li>
             <li><a href="#Marvel Series">Marvel-Series</a></li>
             <li><a href="#sony Movies">Sony-Movies</a></li>
@@ -203,7 +204,7 @@
     
         
 
-        
+
 
         <div class="movie-session">
             <img src="./assets/img/ironman2.jpg" alt="IronMan 2">
@@ -242,7 +243,11 @@
     <div class="background-layout"></div>
     <div class="popup">
 
-    </div>
+    <script>
+  function toggleMenu() {
+    document.getElementById("navbar-list").classList.toggle("show");
+  }
+</script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
